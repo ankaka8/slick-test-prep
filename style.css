@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+body {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8) url(img/Cover_anni40-50_1920x800.jpg)no-repeat;
+
+    background-size: cover;
+    background-blend-mode: hue;
+}
+
+.wrap {}
+
+
+/* header --  */
+header {
+    border: 1px solid #ddd;
+    height: 100px;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    /* 자식을 왼쪽으로 정렬하라는 명령문  */
+    justify-content: space-between;
+    /* 여백의 사이사이를 동일하게 배치하는 명령문  */
+    align-items: center;
+}
+
+header .container .logo {
+    width: 150px;
+}
+
+header .container .logo a {}
+
+header .container .logo a img {
+    width: 100%;
+}
+
+
+header .container .menu_wrap {}
+
+header .container .memu_wrap ul {
+    display: flex;
+    width: 850px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .menu_wrap ul li {}
+
+header .container .menu_wrap ul li a {}
+
+header .container .search {}
+
+header .container .search a {}
+
+header .container .search a i {}
+
+
+.main {
+    margin-top: 5%;
+}
+
+.main .slick-slide {
+    display: flex;
+    position: relative;
+}
+
+
+
+.left_area {
+    width: 50%;
+    height: 80vh;
+}
+
+.right_area {
+    width: 50%;
+    height: 80vh;
+    background-color: blue;
+}
+
+.left_area {}
+
+.left_area .vespa_img {
+    width: 114%;
+    padding-top: 306px;
+}
+
+.left_area .vespa_img {}
+
+.main .slick-slide.slick-active .left_area .vespa_img {
+    animation: fadeInR 0.5s 0.5s both
+}
+
+.left_area .vespa_img img {
+    width: 100%;
+}
+
+.left_area .vespa_tit {
+    position: absolute;
+    left: 0;
+    top: 120px;
+    z-index: -1;
+}
+
+.left_area .vespa_tit h2 {
+    font-size: 129px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.left_area .vespa_tit p {
+    font-size: 19px;
+    color: #fff;
+    letter-spacing: 15px;
+    position: absolute;
+    top: 701px;
+}
+
+
+
+
+
+.main .slick-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+
+@keyframes fadeInR {
+    0% {
+        transform: translateX(150%); opacity:0;
+    }
+
+    100% {
+        transform: translateX(0%); opacity:1;
+    }
+}
+
+
+@keyframes fadeInL {
+    0% {
+        transform: translateX(150%); opacity:0;
+    }
+
+    100% {
+        transform: translateX(0%);  opacity:1;
+    }
+}
+
+
+@keyframes fadeInT {
+    0% {
+        transform: translateY(150%); opacity:0;
+    }
+
+    100% {
+        transform: translateY(0%);  opacity:1;
+    }
+}
